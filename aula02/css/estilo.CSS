@@ -1,16 +1,10 @@
 body{
     background: rgb(161, 110, 14); 
     color: red;
+    font-family: Arial;
     
 }
 
-div{
-    border: red;
-}
-
-
 h1{
-    background: yellow;
-    color: red;
-
+    border-bottom:2px dotted white ;
 }

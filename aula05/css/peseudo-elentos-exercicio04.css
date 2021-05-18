@@ -1,0 +1,14 @@
+
+body{
+    background: #002244;
+}
+
+div::before{
+
+    border-left: 3px solid orange;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: white;
+    display: inline-block;
+}

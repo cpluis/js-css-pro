@@ -1,0 +1,49 @@
+.capa-disco {
+    width: 350px;
+    height: 350px;
+    background-image: url(../imagem/capa-disco.png);
+    position: absolute;
+}
+
+.disco {
+    width: 330px;
+    height: 330px;
+    border-radius: 50%;
+    border: 4px solid black;
+    position: absolute;
+    margin-left: 100px;
+    margin-top: 7px;
+    background: repeating-radial-gradient(circle at 50%, black, black 12px, grey, grey 15px);
+    transition: margin-left 2s;
+}
+
+
+
+.disco:hover {
+    margin-left: 250px;
+    transition: margin-left 2s;
+}
+
+.imagem-disco {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: relative;
+    margin-top: 115px;
+    margin-left: 115px;
+    background-image: url(../imagem/capa-disco.png);
+    background-size: contain;
+}
+
+.capa-disco:hover {
+    background-image: url(../imagem/capa-disco.png);
+    width: 350px;
+    height: 350px;
+    background-size: contain;
+}
+
+.disco:hover .imagem-disco{
+    margin-left: 113px;
+    transition: margin-left 2s;
+    background-image: url(../imagem/capa-animada.gif);
+}

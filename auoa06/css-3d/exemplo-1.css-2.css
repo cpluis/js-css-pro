@@ -1,0 +1,47 @@
+body {
+    background: #024;
+    perspective: 800px;
+}
+
+.pessoa {
+    width: 256px;
+    height: 256px;
+    background: url(../img/medico.png);
+    border: 4px solid white;
+
+
+    transition: transform 1s;
+
+    
+    margin: auto; 
+
+    position: relative;
+    
+}
+
+.medico-1:hover{
+
+    transform: rotateX(75deg)  rotateY(95deg) rotate(180deg);    
+}
+/* mais suavisado o 3D */
+
+.medico-2:hover{
+                    /* x, y , z */
+    transform:rotate3d(1, 0, 0, 90deg)
+}
+
+.nome {
+    background: rgba(0,0,0,0.5);
+    padding: 4px 0;
+    color: white;
+    text-align: center;
+    font-family: Arial;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .medico-3:hover{
+    /* x, y , z */
+transform:rotate3d(1, 0, 0, 90deg)
+}

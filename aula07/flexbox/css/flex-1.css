@@ -1,0 +1,40 @@
+body {
+    background: #002244;
+}
+
+.container {
+    border: 3px solid white;
+    width: 640px;
+    height: 480px;
+
+
+    display: flex;
+    /* justifica o conteudo [e uma propriedade do PAI */
+    /* justify-content: center; */
+   
+    justify-content: space-around;
+
+    /* alinha os itens na vertical */
+    align-items: center;
+}
+
+.filho {
+    border: 2px solid yellow;
+    width: 100px;
+    height: 100px;
+
+    font-size: 40px;
+    color: white;
+
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.alto {
+    height: 240px;
+    
+}
+
+/* stretch estica tem que tirar a altura */

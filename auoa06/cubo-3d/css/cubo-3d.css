@@ -1,5 +1,9 @@
+
+body {
+    background: #002244;
+}
 .container {
-    border: 1px solid red;
+    
     width: 400px;
     height: 400px;
     margin: 0 auto;
@@ -13,26 +17,28 @@
 
 
 #cubo {
-    border: 1px solid purple;
+    
     width: 100px;
     height: 100px;
     
 }
 
 .face {
-    border: 1px solid orange;
+    border: 1px dotted white;
+    border-radius: 10px;
     width: 100px;
     height: 80px;
-font-size: 60px;
- padding-top: 20px ;
-text-align: center;
+    font-size: 60px;
+    padding-top: 20px ;
+    text-align: center;
 
     position: absolute; 
 }
 
 
 .frente {
-    display: none;
+    /* display: none; */
+    
     background: rgba(90,90,90,0.7);
 
     transform: translateZ(50px);
@@ -47,13 +53,13 @@ text-align: center;
 .direita {
     
     background: rgba(210,0,0,0.7);
-    transform: rotateZ(90deg) translateZ(50px);
+    transform: rotateY(90deg) translateZ(50px);
 }
 
 .esquerda {
   
     background: rgba(0,0,210,0.7);
-    transform: rotateZ(-90deg) translateZ(50px);
+    transform: rotateY(-90deg) translateZ(50px);
 }
 
 .topo {
@@ -64,4 +70,25 @@ text-align: center;
 .embaixo {
     background: rgba(210,0,210,0.7);
     transform: rotateX(-90deg) translateZ(50px);
+}
+
+
+/* rotação */
+
+#cubo:hover {
+    transform-style: preserve-3d;
+
+    animation-name: gira;
+    animation-direction: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: linear;
+}
+
+
+@keyframes gira {
+    to {
+        transform: rotate3d(1, 0, 1, 360deg);
+    }
+
 }

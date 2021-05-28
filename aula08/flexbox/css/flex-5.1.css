@@ -1,0 +1,44 @@
+body {
+  background: #002244;
+}
+
+.container {
+  border: 3px solid white;
+  width: 640px;
+  height: 480px;
+
+  display: flex;
+
+ flex-wrap: wrap;
+ /* aline-content alinha o conteudo no eixos Ydo container */
+ /* align-content: center;  */
+ /* alinha os intens referentes ao intens */
+ /* align-items: center; */
+
+ align-items: flex-end;
+ align-content: space-between;
+
+  
+}
+
+.filho {
+  color: white;
+  border: 2px solid yellow;
+  width: 100px;
+  height: 100px;
+
+ /* flex-wrap: wrap; */
+ 
+}
+
+.outro {
+  align-self: flex-start;
+}
+
+.maior {
+
+  height: 130px;
+  align-self: flex-end;
+}
+
+

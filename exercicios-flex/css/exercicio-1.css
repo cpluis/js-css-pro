@@ -1,0 +1,51 @@
+body {
+
+    width: 900px;
+    height: 1000px;
+    background: #05052b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+  }
+  
+  .container {
+    border: 3px solid white;
+    background: rgb(76, 77, 75);
+    width: 600px;
+    height: 300px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  
+  }
+  
+  .filho {
+
+    /* border: 1px solid rgb(8, 8, 8); */
+    color: black;
+    background: white;
+    width: 240px;
+    height: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+   
+  }
+
+  .maior {
+    background: white;
+    width: 40px;
+    height: 60px;
+    display: flex;
+    /* flex-direction: column; */
+     justify-content: center;
+     align-items: center;  
+    
+  }
+  
+  

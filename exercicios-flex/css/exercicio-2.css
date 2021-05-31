@@ -1,0 +1,151 @@
+body {
+    background: #002244;
+    margin: 0;
+}
+
+.container {
+    /* position: relative; */
+    background: rgb(9, 90, 83);
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    background: rgb(95, 209, 243);
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.menu:hover{
+    color: brown;
+}
+.modal {
+    border-radius: 3%;
+    background: rgb(214, 213, 205);
+    width: 700px;
+    height: 400px;
+}
+
+.text-abaixo-botao {
+    display: flex;
+}
+
+a {
+    display: inline-block;
+    padding: 1em;
+    text-decoration: none;
+    color: rgb(10, 10, 10);
+    display: flex;
+    align-items: center;
+}
+
+.seja-bem-vindo {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(26, 26, 27);
+    font-size: 18px;
+}
+
+.font-botao {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.text-baixo-botao {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(43, 43, 48);
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-filho {
+    width: 80px;
+    height: 40px;
+    background: rgb(236, 236, 238);
+    border-radius: 10%;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+} 
+
+.menu-filho:hover  {
+    background-color: cadetblue;
+    font-weight: bold;
+
+}
+
+.botao-grande:hover  {
+    background-color: cadetblue;
+    font-weight: bold;
+}
+
+.diferente {
+    position: absolute;
+    right: 0;
+}
+
+span {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    font-size: 16px;
+}
+
+.linha {
+    width: 80%;
+}
+
+.fundo-botao-filho {
+    width: 150px;
+    height: 40px;
+    border: 1px solid rgb(51, 6, 173);
+    background-color: teal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fundo-botao-filho:hover  {
+    background-color: cadetblue;
+    font-weight: bold;
+}
+
+.parte-cima-modal {
+    height: 200px;
+    flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.botao-grande {
+    width: 130px;
+    height: 50px;
+    border: 1px solid springgreen;
+    color: #002244;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parte-baixo-modal {
+    display: flex;
+}
+
+.botao-filho {
+    width: 800px;
+    height: 80px;
+    display: flex;
+    justify-content: space-evenly;
+}

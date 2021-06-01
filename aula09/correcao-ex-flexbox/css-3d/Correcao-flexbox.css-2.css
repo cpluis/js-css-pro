@@ -1,0 +1,132 @@
+:root {
+
+    --fundo: linear-gradient(var(--forte), var(--super-forte));
+    --medio: #51c4d3;
+    --fraco:#d8e3e7;
+    --forte: #126e82;
+    --super-forte: #123c33;
+    --claro:rgba(255,255,255,0.8);
+    
+
+}
+
+html, body {
+    /* vh / vw:  viewport*/
+    height: 100vh;
+}
+
+body{
+
+    margin: 0;
+    background: var(--fundo);
+    font-family: Raleway, Arial;
+}
+
+@media screen and (max-height: 400px) {
+    html, body {
+      height: auto;
+    }
+  
+    .welcome {
+      margin-top: 20px;
+    }
+  }
+
+nav {
+background:var(--medio) ;
+padding: 10px;
+height: 62px;
+
+display: flex;
+align-items: center;
+
+justify-content: space-between;
+}
+
+
+nav a {
+    border-radius: 4px;
+    background: var(--fraco);
+    padding: 12px;
+    text-decoration: none;
+    color: var(--super-forte);
+}
+
+
+nav a:hover{
+    color: var(--fraco);
+    background: var(--super-forte);
+}
+
+.esquerda {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.content {
+    
+    border: 1px solid var(--forte);
+    display: flex;
+    height: calc(100% - 82px );
+    align-items: center;
+    justify-content: center;
+
+}
+
+.welcome {
+    background: var(--claro);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+
+}
+
+.welcome button{
+
+    border: var(--forte);
+    background: var(--fraco);
+    border-radius: 4px;
+    padding: 12px;
+    
+}
+
+.welcome button:hover{
+
+    border: var(--forte);
+   color: var(--fraco);
+    
+}
+
+.planos {
+    border-top: 1px dotted var(--medio);
+    margin-top: 20px;
+    padding-top: 10px;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.plano {
+    /* width: 100%; */
+    font-weight: bold;
+   
+}
+
+.plano h4 {
+    background: var var(--forte);
+    color: var(--claro);
+    padding: 4px;
+    width: 100px;
+}
+
+plano a {
+    color: var(--super-forte);
+    text-decoration: none;
+}
+
+plano a:hover {
+   text-decoration: underline;
+}

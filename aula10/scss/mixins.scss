@@ -1,0 +1,20 @@
+@mixin  borda-redonda { 
+    border-radius: 10px;
+    
+}
+
+//quando um mixin necessita receber mais de um argumento
+//precisa passar todos os argumentos
+@mixin  sobra($x: 2px, $y:2px, $cor:red) {
+    box-shadow: $x $y 2px 2px $cor;
+}
+
+@mixin botao-custom{
+    padding: 8px;
+    font-family: Arial;
+    border: 1px solid $branco;
+    box-shadow: none;
+
+    //para suportar conteudo de fora
+    @content;
+}

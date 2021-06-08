@@ -27,7 +27,11 @@ body {
       background-size: contain;
       margin-bottom: 20px;
       border-radius: 10px;
-      box-shadow: 2px 2px 2px 2px green; }
+      box-shadow: 2px 2px 2px 2px green;
+      border-radius: 50%;
+      border: 3px dotted white; }
+      body .container .foto else {
+        border-radius: 50%; }
     body .container button {
       background: orange;
       padding: 8px;
@@ -47,6 +51,14 @@ body {
         font-weight: bold; }
       body .container p.local {
         font-style: italic; }
+    body .container .item-red {
+      color: red; }
+    body .container .item-yellow {
+      color: yellow; }
+    body .container .item-orange {
+      color: orange; }
+    body .container .item-purple {
+      color: purple; }
   body footer {
     background: orange;
     position: fixed;

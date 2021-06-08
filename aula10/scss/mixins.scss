@@ -18,3 +18,13 @@
     //para suportar conteudo de fora
     @content;
 }
+
+@mixin  bolinha-ou-quadrado ($bolinha: false){
+    @if $bolinha{
+        border-radius: 50%;
+    }  else {
+        border-radius: 50%;
+    }
+    
+    @content;
+}

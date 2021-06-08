@@ -25,6 +25,10 @@
 
         @include borda-redonda();
         @include sobra( $cor:green);
+
+        @include bolinha-ou-quadrado($bolinha: true){
+          border: 3px dotted white;
+        };
     }
 
         button {
@@ -56,4 +60,23 @@
                 font-style: italic;
             }
         }
+
+          //lista em sass
+
+$cores: red, yellow, orange, purple;
+
+@each $cor in $cores {
+  .item-#{$cor} {
+    color: $cor;
   }
+}
+
+for $i from 1 through 3 {
+  ul:nth-child(#{$i}) {
+  background: red;
+  }
+ }
+  
+  }
+
+

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+</head>
+<body>
+
+    <button type="button" id="btn">botão</button>
+
+    <script>
+
+        var btn = document.getElementById('btn');
+        btn.style.color = 'red';
+
+        function clicou(){
+            console.log('Clicou no botão');
+        }
+
+        function clicou2(){
+            console.log('Clicou no botão2');
+            
+        }
+
+        // btn.onclick =clicou;
+        // btn.onclick =clicou2;
+
+btn.addEventListener('click', clicou)
+
+
+    </script>
+</body>
+</html>

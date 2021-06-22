@@ -2,9 +2,7 @@
 function carregaDados(arquivo){
 var httRequest = new XMLHttpRequest();
 
-
 httRequest.onload = mostraDados;
-
 httRequest.onloadstart = mostraLoader();
 
 httRequest.open('GET',arquivo,true);

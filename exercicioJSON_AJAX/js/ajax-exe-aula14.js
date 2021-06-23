@@ -20,9 +20,6 @@
     
     
             window.localStorage.setItem('produtos',JSON.stringify())
-    
-    
-    
             httRequest.send(null);
         }else{
 
@@ -38,6 +35,11 @@
             var httRequest = new XMLHttpRequest();
             alert("deletando o id "+id);
            httRequest.open('DELETE',`${url + id}`,true);
+
+           chamada.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+              pegaValor();
+            }
     
            httRequest.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
     
